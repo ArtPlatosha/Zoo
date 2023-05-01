@@ -558,3 +558,64 @@ section {
 	color: var(--black);
 	border-top: .2rem solid rgba(0, 0, 0, 0.2);
 }
+
+@media(max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
+
+	.header {
+		padding: 2rem;
+	}
+
+	section {
+		padding: 8rem 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	#menu-btn {
+		display: inline-block;
+	}
+
+	.header .navbar {
+		position: absolute;
+		top: 99%;
+		left: 0; right: 0;
+		background: var(--white);
+		border-top: .1rem solid var(--main);
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+
+	.header .navbar.active {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	.header .navbar a {
+		display: block;
+		margin: 2rem;
+		font-size: 2rem;
+	}
+
+	.home {
+		background-position: left;
+	}
+
+	.home .content h3 {
+		font-size: 5rem;
+	}
+
+.deco-title {
+	display: none;
+}
+}
+
+@media (max-width: 450px) {
+	html {
+		font-size: 50%;
+	}
+
+	.home .content h3 {
+		font-size: 4rem;
+	}
+}
