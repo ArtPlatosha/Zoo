@@ -73,6 +73,15 @@ section {
 	width: 100%;
 }
 
+.heading {
+	text-align: center;
+	font-size: 4rem;
+	color: var(--main);
+	text-transform: uppercase;
+	margin-bottom: 3rem;
+	padding: 1.2rem 0;
+}
+
 .header {
 	position: fixed;
 	top: 0;
@@ -275,4 +284,25 @@ section {
 	font-size: 1.5rem;
 	color: #444;
 	font-weight: normal;
+}
+
+.gallery {
+	background-color: var(--bg);
+}
+
+.gallery .slide .image {
+	height: 30rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.gallery .slide .image img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: var(--white);
 }
